@@ -1,6 +1,0 @@
-.hienthithongtin {
-  display: grid;
-  grid-template-columns: repeat(4, 400px);
-  gap: 2px;
-  padding: 10%;
-}

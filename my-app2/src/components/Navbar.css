@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+
+  width: 100%;
+  height: 40px;
+  justify-content: space-between; /* Căn giữa tất cả các phần tử theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 10px 20px;
+  position: relative; /* Giúp căn chỉnh logo bên trái */
+}
+
+.searchbox {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+.logo-dragon {
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  margin-top: -25px;
+  left: 300px;
+}
+.searchbox input {
+  width: 450px;
+  height: 40px;
+
+  border-radius: 20px;
+  border: 1px solid rgb(143, 139, 139); /* Thêm viền với độ dày và màu sắc */
+
+  padding: 5px 20px; /* Thêm padding để nội dung không chạm viền */
+}
+.searchbox input ::placeholder {
+  color: rgb(110, 102, 102);
+}
+.search-icon {
+  position: absolute;
+  right: 746px;
+  top: 22px;
+}
+.dangnhap {
+  position: absolute;
+  right: 100px;
+  height: 35px;
+  width: 150px;
+  border-radius: 20px;
+  border: 1px solid rgb(143, 139, 139); /* Thêm viền với độ dày và màu sắc */
+  background-color: transparent;
+  padding: 5px 20px; /* Thêm padding để nội dung không chạm viền */
+  cursor: pointer;
+}
+.dangnhap:hover {
+  background-color: rgb(241, 241, 241); /* Màu xám khi hover */
+  color: rgb(0, 0, 0); /* Thay đổi màu chữ khi hover */
+}
+.button-dangnhap {
+  background-color: rgb(121, 191, 219);
+
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: 50%; /* Đặt vị trí từ đỉnh */
+  left: 50%; /* Đặt vị trí từ bên trái */
+  transform: translate(-50%, -50%); /* Dịch chuyển nút về giữa */
+  border-radius: 30px;
+  text-align: center;
+  padding: 20px; /* Thêm khoảng cách cho đẹp */
+}
+.ten-dangnhap,
+.mat-khau {
+  width: 60%;
+  height: 60px; /* Để input chiếm toàn bộ chiều ngang */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 30px;
+  border: 1px solid #cccccc;
+}
+.ten-dangnhap {
+  flex: 1; /* Chiếm phần còn lại của chiều ngang */
+
+  padding: 20px;
+}
+.mat-khau {
+  flex: 1; /* Chiếm phần còn lại của chiều ngang */
+
+  padding: 20px;
+}
